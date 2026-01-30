@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Project Source</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            padding: 2rem;
+            background: #2a2a2a;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+        }
+        h1 { margin-bottom: 1.5rem; }
+        .btn {
+            display: inline-block;
+            background-color: #3b82f6;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 0.5rem;
+            font-weight: bold;
+            transition: background-color 0.2s;
+        }
+        .btn:hover { background-color: #2563eb; }
+        p { color: #a1a1aa; margin-top: 1.5rem; font-size: 0.875rem; }
+        .note { color: #ef4444; font-size: 0.8rem; margin-top: 0.5rem; }
+        .badge { 
+            background: #10b981; 
+            color: #000; 
+            padding: 0.25rem 0.5rem; 
+            border-radius: 0.25rem; 
+            font-size: 0.75rem; 
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Project Source Code</h1>
+        <div class="badge">LATEST BUILD READY (UPDATED)</div>
+        <p style="color: #a1a1aa; font-size: 0.8rem; margin-bottom: 1.5rem;">Build generated: <span id="last-updated">Just now</span></p>
+        <a href="/ciphermarket-source.tar.gz" class="btn" download>Download .tar.gz</a>
+        <script>
+            document.getElementById('last-updated').textContent = new Date().toLocaleString();
+        </script>
+        <p>This archive contains all source code and assets.<br>Extract using: <code>tar -xzf ciphermarket-source.tar.gz</code></p>
+        <p class="note">Note: If you are on Windows, use 7-Zip or WinRAR if the default tool fails.</p>
+    </div>
+</body>
+</html>
