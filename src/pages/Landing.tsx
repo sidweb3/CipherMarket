@@ -1,12 +1,11 @@
 import { motion } from 'framer-motion';
-import { Lock, Database, Zap, Github, ArrowRight, CheckCircle2, Users, TrendingUp, Globe, Code, FileCheck, Layers } from 'lucide-react';
+import { Lock, Database, Zap, Github, ArrowRight, CheckCircle2, Users, TrendingUp, Code, FileCheck, Layers } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { WalletConnect } from '@/components/WalletConnect';
 import { Footer } from '@/components/Footer';
 import { TextScramble } from '@/components/TextScramble';
 import { Link } from 'react-router';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Separator } from '@/components/ui/separator';
 
 export default function Landing() {
   return (

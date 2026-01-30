@@ -1,4 +1,4 @@
-import { ProgramManager, Account, AleoKeyProvider, AleoNetworkClient, NetworkRecordProvider } from '@provablehq/sdk';
+// Aleo SDK types available for future use
 
 export interface CSVSchema {
   columnCount: number;
